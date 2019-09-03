@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # 3rd party packages
     'django_twilio',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
