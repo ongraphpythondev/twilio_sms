@@ -21,11 +21,12 @@
       <a href={% url 'home' %}>Home</a>
       <div class="jumbotron">
         {% if error %}
-        <p>{{ error }}</p>
+        <p class="text-danger">{{ error.msg }}</p>
         {% else %}
-        Message
-        <p>{{ body }}</p>
-        Sent to {{ to }}
+        <p>Message Sent to {{ to }}: </p>
+          <div class="container rounded bg-light">
+            <p class="p-2 ml-1">{{ body }}</p>
+          </div>
         {% endif %}
       </div>
       {% endif %}
